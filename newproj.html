@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Events Calendar</title>
+    <link rel="stylesheet" href="csslink.css">
+    <style>
+        /* Basic reset */
+        body, h1, h2, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header styles */
+        .site-header {
+            background-color: #000000;
+            color: white;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            margin-left: 20px;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            margin-right: 20px;
+        }
+
+        .nav-menu li {
+            margin-left: 20px;
+            position: relative;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        .nav-menu a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        /* Dropdown styles */
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #555;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+        .dropdown a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: block;
+            border-radius: 5px;
+        }
+
+        .dropdown a:hover {
+            background-color: #666;
+        }
+
+        .nav-menu li:hover .dropdown {
+            display: block;
+        }
+
+        /* Calendar container styles */
+        .calendar-container {
+            padding: 20px;
+        }
+
+        header h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .calendar {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .event {
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .event .date {
+            font-size: 1.5em;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+
+        .event .details h2 {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">
+            <img src="https://static.vecteezy.com/system/resources/previews/041/732/041/non_2x/red-car-and-shield-an-illustration-of-logo-sport-vector.jpg" alt="Logo">
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#">News</a></li>
+            <li><a href="#">Forums</a></li>
+            <li>
+                <a href="#">Support</a>
+                <div class="dropdown">
+                    <a href="#">Report a Bug</a>
+                    <a href="#">Get Help</a>
+                    <a href="#">Make Suggestions</a>
+                </div>
+            </li>
+        </ul>
+    </header>
+
+    <div class="calendar-container">
+        <header>
+            <h1>GAMING EVENTS CALENDAR</h1>
+        </header>
+        <div class="calendar">
+            <div class="event">
+                <div class="date">Aug 10</div>
+                <div class="details">
+                    <h2>Game Launch: Adventure Quest</h2>
+                    <p>Join us for an exciting cross-country race. Event starts 15 Aug!!!</p>
+                </div>
+            </div>
+            <div class="event">
+                <div class="date">Aug 15</div>
+                <div class="details">
+                    <h2>Esports Champions 2024</h2>
+                    <p>Watch top teams compete in the annual Esports Championship exclusively on .</p>
+                </div>
+            </div>
+            <div class="event">
+                <div class="date">Aug 20</div>
+                <div class="details">
+                    <h2>McLaren Senna GTR: Arriving soon!!</h2>
+                    <p></p>
+                </div>
+            </div>
+            <div class="event">
+                <div class="date">Aug 20</div>
+                <div class="details">
+                    <h2>V-SPEC EVENTS: Vintage LE Mans arriving soon!!</h2>
+                    <p></p>
+                </div>
+            </div>
+            <div class="event">
+                <div class="date">Aug 20</div>
+                <div class="details">
+                    <h2>Developer AMA</h2>
+                    <p>Ask the developers anything about the upcoming game updates.</p>
+                </div>
+            </div>
+            <!-- Add more events as needed -->
+        </div>
+    </div>
+</body>
+</html>
